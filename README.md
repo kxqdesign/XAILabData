@@ -24,3 +24,20 @@ In each notebook, do the sections marked 🟢 core in order. Sections marked ⚪
 `lab-data/eurosat_lab_pack_v1.npz` (38 MB) holds a small CNN already trained on EuroSAT (13 Sentinel-2 bands plus one pure-noise control channel, test accuracy 0.969) and 500 test images (50 per class). The EuroSAT notebooks download it by themselves in a few seconds, so there is no dataset download and no training in class. If the download fails, drag the file into the Colab *Files* panel and run the setup cell again.
 
 The two sequence labs make their own data and train their small models in under a minute; they need no download.
+
+## Running on your own computer instead of Colab
+
+Nothing in the notebooks needs to be changed. You need Python 3.10 or newer.
+
+```
+git clone https://github.com/kxqdesign/XAILabData.git
+cd XAILabData
+pip install torch numpy pandas matplotlib scipy scikit-learn scikit-image tqdm lime shap jupyterlab
+jupyter lab
+```
+
+Then open a notebook from `session-1_LIME_SHAP/` or `session-2_sequence_models/` and run the cells from the top.
+
+- The lab pack is read from `lab-data/` in the clone, so nothing is downloaded.
+- The notebooks use a GPU if PyTorch finds one and the CPU otherwise. On a CPU the SHAP lab takes about 10 minutes; the others take 1 to 3 minutes.
+- The first cell of the LIME and SHAP notebooks (`!pip -q install ...`) is only needed in Colab. After the `pip install` above you can skip it.
