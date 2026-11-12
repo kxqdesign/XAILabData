@@ -1,7 +1,5 @@
 # XAILabData
 
-**Author:** Xiangqi Kong
-
 The lab data and the notebooks for the two lab sessions (2 × 50 minutes) of the XAI course. Everything runs in Google Colab with PyTorch.
 
 ## Open in Colab
