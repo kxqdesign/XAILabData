@@ -16,7 +16,7 @@ The lab data and the notebooks for the two lab sessions (2 × 50 minutes) of the
 ## The three versions
 
 - **easy**: the exercise. Almost all the code is written. Each ✏️ TODO has one blank, written `BLANK`, and the comment above it tells you what goes there. A ✅ check cell follows each TODO. Short notes say what each cell does and what to notice in each result.
-- **walkthrough**: nothing to fill in. The complete code with its results already shown, and a *Line by line* table before each important cell. Read it before the lab or when you are stuck.
+- **walkthrough**: nothing to fill in. The complete code with its results already shown, and a plain comment above every line of code that says what it does and why. Read it before the lab or when you are stuck.
 - **solution**: the complete notebook with its results, without the extra notes.
 
 In each notebook, do the sections marked 🟢 core in order. Sections marked ⚪ if time can be skipped.
